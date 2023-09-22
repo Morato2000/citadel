@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(90deg,#15B5EA 0%,#154BEA 100%, #15EAB4 0%);
+   font-family: 'Montserrat', sans-serif;
+}
+p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: black; 
+}
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #eaf6f6;
+    border-width: 6px;
+    width: 5%;
+    margin: 110px auto;
+}
+
+/*For Navigation Bar*/
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: black;
+}
+.logopic{
+    border-radius: 50%;
+}
+
+/*For Hero*/
+.heroimg{
+    border-radius: 100%;
+}
+.intro-text{
+    text-align: left;
+}
+.lead{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+/*For Mission*/
+
+
+
+/*For Courses*/
+#courses{
+    font-family: 'Montserrat', sans-serif;
+}
+.color-white{
+    color: white;
+}
+.flip-box{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    height: 700px;
+   margin-top: 50px;
+}
+.flip-box-front,
+.flip-box-back{
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    min-height: 475px;
+    height: 100%;
+    transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    backface-visibility: hidden;
+}
+.flip-box-front{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-front{
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+.flip-box-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d ;
+}
+.flip-box:hover .flip-box-back{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+.flip-box .inner{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 60px;
+    outline: 1px solid transparent;
+    perspective: inherit;
+    z-index: 2;
+    transform: translateY(-50%)translateZ(60px) scale(.94);
+    top: 50%;
+}
+.flip-box-header{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.flip-box p{
+    font-size: 20px;
+    line-height: 1.5rem;
+}
+.flip-box-img{
+    margin-top: 25px;
+    width: 100px;
+}
+.flip-box-botton{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+/*For cretification*/
+.container .certificate {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.certificate ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certificate li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.certificate li::before {
+    content: "\2022";
+    color: #15B5EA;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.certificate li:hover {
+    background-color: #15B5EA;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*For Footer*/
+footer{
+    width: 100%;
+   
+    bottom: 0;
+    background-color: #0E8AC4;
+    margin-top: 50px; 
+    padding: 20px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.outro-text{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    padding: 1px;
+    color: #000 !important;
+}
+.foot-row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+.foot-col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.foot-col h4:hover{
+    color: #000;
+}
+.foot-col p{
+    font-size: 20px;
+    color: white;
+}
+.foot-logo{
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    color: black;
+    font-weight: 600;
+}
+.col h5{
+    color: black;
+    font-weight: 500;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.foot-col li{
+    list-style: none;
+    margin-bottom: 12px;
+    
+   
+}
+.foot-col li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1px;
+    font-size: 20px;
+}
+.foot-col li a:hover{
+    color: black;
+}
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.fa-brands:hover{
+    background-color: #000;
+}
+.copyright{
+    text-align: center;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top:0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+.copyright a{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.copyright a:hover{
+    color: #000;
+}
+
+/*KeyFrames*/
+@keyframes moving {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+    .col-lg-4 {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+    .flip-box{
+        width: 100%;
+      }
+}
+@media (min-width: 768px) and (max-width: 991px)  {
+
+.flip-box-header{
+    position: relative;
+    right: 20px;
+}
+footer{
+    bottom: unset;
+}
+.foot-col{
+    flex-basis: 100%;
+}
+}
+@media (min-width: 701px) and (max-width: 767px) {
+    footer{
+        bottom: unset;
+    }
+    .foot-col{
+        flex-basis: 100%;
+    }
+  }
+@media (max-width: 700px) {
+    footer{
+        bottom: unset;
+    }
+    .foot-col{
+        flex-basis: 100%;
+    }
+   
+}
