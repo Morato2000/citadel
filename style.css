@@ -8,6 +8,8 @@
 body{
     background-image: linear-gradient(90deg,#15B5EA 0%,#154BEA 100%, #15EAB4 0%);
    font-family: 'Montserrat', sans-serif;
+   background-size: contain;
+   background-repeat: no-repeat;
 }
 p{
     color: white;
@@ -27,6 +29,7 @@ h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     margin-bottom: 20px;
+    
 }
 hr{
     border-style: none;
@@ -34,7 +37,7 @@ hr{
     border-color: #eaf6f6;
     border-width: 6px;
     width: 5%;
-    margin: 50px auto;
+    margin: 10px auto;
 }
 
 /*For Navigation Bar*/
@@ -321,7 +324,9 @@ footer{
         left: 100%;
     }
 }
+
 @media (min-width: 900px) and (max-width: 1199px) {
+
     .col-lg-4 {
       flex-basis: 50%;
       max-width: 50%;
@@ -343,7 +348,9 @@ footer{
     flex-basis: 100%;
 }
 }
+
 @media (min-width: 701px) and (max-width: 767px) {
+   
     footer{
         bottom: unset;
     }
